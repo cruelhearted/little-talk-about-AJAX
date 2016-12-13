@@ -14,12 +14,12 @@
 
    在我看来： ajax请求可以分为三大部分：
 
-1. 创建XHR对象。
+一. 创建XHR对象。
 ```js
         var XHR=new XMLHttpRequest();
 
 ```
-2. 向服务器请求数据。
+二. 向服务器请求数据。
 ```js
         XHR.open("method","url","bool值");
         第一个参数 //  method是你向服务器请求数据的方式 get/post
@@ -29,7 +29,7 @@
         XHR.send();
 ```
 
-3. 监听服务器返回的数据。
+三. 监听服务器返回的数据。
 ```js
     XHR.onreadystatechange=function(){
         if(XHR.readyState==4&&XHR.status==200){
